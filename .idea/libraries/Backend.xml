@@ -1,7 +1,6 @@
 <component name="libraryTable">
   <library name="Backend">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/Backend/musicmanager-sose25-main.zip!/" />
       <root url="jar://$PROJECT_DIR$/Backend/PromptAPIController.zip!/" />
     </CLASSES>
     <JAVADOC />
