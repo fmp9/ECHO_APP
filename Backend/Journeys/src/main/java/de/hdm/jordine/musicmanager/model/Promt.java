@@ -15,19 +15,41 @@ public class Promt {
         // Default-Konstruktor für JSON
     }
 
-    public Promt(String text, LocalDate date, String category) {
+    public Promt(String text, LocalDate date, String category, String headline) {
         this.text = text;
         this.date = date;
         this.category = category;
+        this.headline = headline;
     }
 
     public String getText() {
         return text;
     }
+    public void setText(String text) {
+        this.text = text
+
+    public String getText() {
+            return text;
+        }
 
     public void setText(String text) {
-        this.text = text;
-    }
+            this.text = text;
+        }
+
+    public String getHeasline() {
+            return headline;
+        }
+
+    public void setHeadline(String text) {
+            this.headline = headline
+
+            public String getText() {
+                return text;
+            }
+
+            public void setText(String text) {
+                this.text = text;
+            }
 
     public String getCategory() {
         return category;
