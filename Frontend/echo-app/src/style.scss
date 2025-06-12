@@ -1,0 +1,43 @@
+:root{
+  //colors
+  --main-color: #1A0C0C;
+  --text-color: #FFF2D4;
+  --highlight-color: #F1B426;
+
+  //emotions
+  --happy: #9BB069;
+  --calm: #FFC131;
+  --angry:#FF272B;
+  --sad: #8169FC;
+  --overwhelmed: #926247;
+  --anxious: #FF5DDC;
+
+  //spacing
+  --margin-s: 4px;
+  --margin-m: 8px;
+  --margin-ml: 12px;
+  --margin-l: 16px;
+  --margin-lg: 24px;
+  --margin-xl: 32px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text-color);
+  background-color: var(--main-color);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+a{
+  list-style: none;
+  text-decoration: none;
+  color: var(--main-color);
+}
+h1{
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+}
