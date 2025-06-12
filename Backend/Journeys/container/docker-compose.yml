@@ -1,0 +1,28 @@
+services:
+  mariadb:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: ultr4_s4ve_pwd
+      MYSQL_DATABASE: musicmanagerdb
+      MYSQL_USER: musicmanageruser
+      MYSQL_PASSWORD: sup3r_s4ve_pwd
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data_sose25:/var/lib/mysql
+      - db_conf_sose25:/etc/mysql
+
+  mongodb-new:
+    image: mongo
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb_data_sose25:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=musicmanageruser
+      - MONGO_INITDB_ROOT_PASSWORD=sup3r_s4ve_pwd
+
+volumes:
+  db_data_sose25:
+  db_conf_sose25:
+  mongodb_data_sose25:
