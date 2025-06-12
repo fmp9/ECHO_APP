@@ -1,0 +1,23 @@
+:root{
+  --main-color: #000000;
+  --secondary-color: #ffffff;
+  --highlight-color: #ff0000;
+  --margin-s: 4px;
+  --margin-m: 8px;
+  --margin-l: 16px;
+  --margin-lg: 24px;
+  --margin-xl: 32px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  color: var(--main-color);
+}
+a{
+  list-style: none;
+  text-decoration: none;
+  color: var(--main-color);
+}
