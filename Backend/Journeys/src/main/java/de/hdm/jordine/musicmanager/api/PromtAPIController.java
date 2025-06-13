@@ -7,6 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
+@CrossOrigin
 @RestController
 @RequestMapping("/api/v1")
 public class PromtAPIController {
@@ -20,8 +23,8 @@ public class PromtAPIController {
 
     @GetMapping("/randomPrompt")
     @ResponseStatus(HttpStatus.OK)
-    public Promt getRandomPrompt() {
-        return promtController.getRandomPrompt();
+    public Promt getRandomPrompt(@RequestParam(required = false) String category) {
+        return promtController.getRandomPrompt(category);
     }
 
     @PostMapping("/addPrompt")
@@ -29,4 +32,5 @@ public class PromtAPIController {
     public void addPrompt(@RequestBody Promt promt) {
         promtController.addPrompt(promt);
     }
+
 }
