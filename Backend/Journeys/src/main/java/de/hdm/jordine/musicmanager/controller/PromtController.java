@@ -14,10 +14,6 @@ public class PromtController {
 
     private final List<Promt> meineListe = new ArrayList<>();
 
-    public class PromptLoader {
-        public static void main(String[] args) {}
-    }
-
     public PromtController() {
         meineListe.add(new Promt("What sparked your anger today?", LocalDate.of(2025, 6, 12), "angry"));
         meineListe.add(new Promt("How did your anger influence your actions?", LocalDate.of(2025, 6, 12), "angry"));

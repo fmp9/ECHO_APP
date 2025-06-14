@@ -9,7 +9,6 @@ public class Promt {
     private String category;
     private LocalDate date;
     private String headline;
-
     public Promt() {
         // Default-Konstruktor für JSON
     }
